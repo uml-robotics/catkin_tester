@@ -16,36 +16,44 @@ git clone [this-repo]
 
 
 # build external dependencies
-cd ~/catkin_tester/ros_external_depends/SDL2/build
+cd ~/catkin_tester/ros_external_depends/SDL2
+mkdir build && cd build
 cmake ..
 make
 
-cd ~/catkin_tester/ros_external_depends/SDL_image/build
+cd ~/catkin_tester/ros_external_depends/SDL_image
+mkdir build && cd build
 cmake ..
 make
 
-cd ~/catkin_tester/ros_external_depends/flann/build
+cd ~/catkin_tester/ros_external_depends/flann
+mkdir build && cd build
 cmake ..
 make
 
-cd ~/catkin_tester/ros_external_depends/qhull/build
+cd ~/catkin_tester/ros_external_depends/qhull
+mkdir build && cd build
 cmake ..
 make
 
 
-cd ~/catkin_tester/ros_external_depends/orocos-bayesian-filtering/build
+cd ~/catkin_tester/ros_external_depends/orocos-bayesian-filtering
+mkdir build && cd build
 cmake ..
 make
 
-cd ~/catkin_tester/ros_external_depends/orocos-bayesian-filtering/bfl_typekit/build
+cd ~/catkin_tester/ros_external_depends/orocos-bayesian-filtering/bfl_typekit
+mkdir build && cd build
 cmake ..
 make
 
-cd ~/catkin_tester/ros_external_depends/orocos-bayesian-filtering/orocos_bfl/build
+cd ~/catkin_tester/ros_external_depends/orocos-bayesian-filtering/orocos_bfl
+mkdir build && cd build
 cmake ..
 make
 
-cd ~/catkin_tester/ros_external_depends/pcl/build
+cd ~/catkin_tester/ros_external_depends/pcl
+mkdir build && cd build
 cmake ..
 make
 
