@@ -1,0 +1,9 @@
+name: Gazebo Robot World
+description: Llaunch multiple robots in Gazebo using Concert framework 
+author: Jihoon Lee, Piyush Khandelwal
+priority: 3
+launcher_type: roslaunch
+launcher: concert_service_gazebo/gazebo_robot_world.launch
+icon: concert_service_gazebo/gazebo_robot_world.png
+parameters: concert_service_gazebo/gazebo_robot_world.parameters
+interactions: concert_service_gazebo/gazebo_robot_world.interactions
