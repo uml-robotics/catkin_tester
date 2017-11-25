@@ -55,6 +55,9 @@ mkdir build && cd build
 cmake ..
 make
 
+# 1) download the PCL source library: https://github.com/PointCloudLibrary/pcl/releases
+# 2) make sure you use version 1.7, NOT 1.8
+# then do the following...
 cd ~/catkin_tester/ros_external_depends/pcl
 mkdir build && cd build
 cmake ..
