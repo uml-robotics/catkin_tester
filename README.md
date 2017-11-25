@@ -1,5 +1,5 @@
 # catkin_tester
-*A pre-build local source install of the ROS navigtion stack, Turtlebot backends, and dependencies*
+*A pre-build local source install of the ROS navigtion stack, Turtlebot backend repositories, and dependencies*
 
 ### **Introduction**
 
@@ -27,6 +27,7 @@ make
 cd ~/catkin_tester/ros_external_depends/flann/build
 cmake ..
 make
+# Now copy the files from ~/catkin_tester/ros_external_depends/flann/build/lib to ~/catkin_tester/ros_external_depends/flann/build/CMakeFiles/Export/lib
 
 cd ~/catkin_tester/ros_external_depends/qhull/build
 cmake ..
@@ -45,7 +46,11 @@ cd ~/catkin_tester/ros_external_depends/orocos-bayesian-filtering/orocos_bfl/bui
 cmake ..
 make
 
-cd ~/catkin_tester/ros_external_depends/pcl/build
+cd ~/catkin_tester/ros_external_depends
+git clone https://github.com/PointCloudLibrary/pcl.git
+cd pcl
+git checkout pcl-1.7.2
+mkdir build && cd build
 cmake ..
 make
 
