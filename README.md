@@ -61,7 +61,7 @@ cmake ..
 make
 
 cd ~/catkin_tester
-source devel/setup.bash
+source /opt/ros/rosdesktop_ws/devel_isolated/setup.bash
 catkin_make
 ```
 
