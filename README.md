@@ -3,6 +3,9 @@
 
 ### **Introduction**
 
+This repository *is a ros workspace*.  So please clone it to your home folder (as per the instructions below.
+If you put in inside a pre-existing catkin workspace...well, things will get interesting.
+
 The build configuration has been customized to compile all packages a position-independent executables/libs.
 So (if it has been set up correctly), you might not nessisarily have to recompile it -- the libs and binaries,
 should (in theory, anyway) be functional on your own system.
@@ -10,7 +13,7 @@ should (in theory, anyway) be functional on your own system.
 
 ### **Build**
 ```
-source source /opt/ros/rosdesktop_ws/devel_isolated/setup.bash
+source /opt/ros/rosdesktop_ws/devel_isolated/setup.bash
 cd
 git clone [this-repo]
 
