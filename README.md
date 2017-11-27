@@ -33,6 +33,8 @@ cd ~/catkin_tester/ros_external_depends/flann
 mkdir build && cd build
 cmake ..
 make
+# copy all the library files from ~/catkin_tester/ros_external_depends/flann/build/lib to ~/catkin_tester/ros_external_depends/flann/build/CMakeFiles/Export/lib
+# open flann-config.cmake located at ~/catkin_tester/ros_external_depends/flann/build/generated, and replace the line "#include("${CMAKE_CURRENT_LIST_DIR}/flann-targets.cmake")" with "include("${CMAKE_SOURCE_DIR}/../ros_external_depends/flann/build/CMakeFiles/Export/lib/cmake/flann/flann-targets.cmake")"
 
 cd ~/catkin_tester/ros_external_depends/qhull
 mkdir build && cd build
